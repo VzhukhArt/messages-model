@@ -4,7 +4,7 @@ plugins {
 }
 
 group = "com.dm.net.vzukh"
-version = "0.0.3-SNAPSHOT"
+version = findProperty("projVersion")?.toString() ?: "0.0.1-SNAPSHOT"
 
 repositories {
     mavenCentral()
